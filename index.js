@@ -1,4 +1,4 @@
-/*! v5.3.0 - 2019-05-08T20:26:17.193Z */
+/*! v5.3.0 - 2019-05-08T22:14:52.416Z */
 APP_VERSION="5.3.0";
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
@@ -149,26 +149,31 @@ APP_VERSION="5.3.0";
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push([275,1]);
+/******/ 	deferredModules.push([320,1]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 261:
+/***/ 305:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(Symbol) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
-/* harmony import */ var _availity_page_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(270);
-/* harmony import */ var availity_reactstrap_validation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7);
-/* harmony import */ var availity_reactstrap_validation__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(availity_reactstrap_validation__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _availity_reactstrap_validation_select_resources__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(76);
-/* harmony import */ var _components_Agreement__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(268);
-/* harmony import */ var _stores_spaceStore__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(269);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(169);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(170);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(125);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(64);
+/* harmony import */ var lodash_get__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(62);
+/* harmony import */ var lodash_get__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(lodash_get__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _availity_page_header__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(314);
+/* harmony import */ var availity_reactstrap_validation__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(12);
+/* harmony import */ var availity_reactstrap_validation__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(availity_reactstrap_validation__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _availity_reactstrap_validation_select_resources__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(90);
+/* harmony import */ var _components_Agreement__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(312);
+/* harmony import */ var _hooks_useSpace__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(313);
 var _jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/project/app/templates/sso/areas/SsoForm.js";
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
@@ -186,45 +191,47 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
 /* harmony default export */ __webpack_exports__["a"] = (function () {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null),
       _useState2 = _slicedToArray(_useState, 2),
       customerId = _useState2[0],
       setCustomerId = _useState2[1];
 
-  var _useSpace = Object(_stores_spaceStore__WEBPACK_IMPORTED_MODULE_6__[/* useSpace */ "a"])(),
-      space = _useSpace.space;
-
-  console.log("Space:", space);
+  var _useSpace = Object(_hooks_useSpace__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])("48C607A70B5A46A3864A34E2BDDDEA04"),
+      _useSpace2 = _slicedToArray(_useSpace, 1),
+      space = _useSpace2[0];
 
   var onCancel = function onCancel() {
     return window.history.back();
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_availity_page_header__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
-    appName: "Single Sign-On",
-    spaceId: "48C607A70B5A46A3864A34E2BDDDEA04",
+  console.log('Space:', space);
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(availity_reactstrap_validation__WEBPACK_IMPORTED_MODULE_3__["AvForm"], {
-    onValidSubmit: function onValidSubmit() {
-      console.log("valid submit");
-    },
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_availity_page_header__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"], {
+    appName: "Single Sign-On",
+    spaceId: "48C607A70B5A46A3864A34E2BDDDEA04",
+    spaceName: lodash_get__WEBPACK_IMPORTED_MODULE_5___default()(space, 'name'),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_availity_reactstrap_validation_select_resources__WEBPACK_IMPORTED_MODULE_4__[/* AvOrganizationSelect */ "a"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(availity_reactstrap_validation__WEBPACK_IMPORTED_MODULE_7__["AvForm"], {
+    onValidSubmit: function onValidSubmit() {
+      console.log('valid submit');
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_availity_reactstrap_validation_select_resources__WEBPACK_IMPORTED_MODULE_8__[/* AvOrganizationSelect */ "a"], {
     label: "Select and Organization",
     onChange: function onChange(e) {
       return setCustomerId(e.customerId);
@@ -238,10 +245,10 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 26
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_availity_reactstrap_validation_select_resources__WEBPACK_IMPORTED_MODULE_4__[/* AvProviderSelect */ "b"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_availity_reactstrap_validation_select_resources__WEBPACK_IMPORTED_MODULE_8__[/* AvProviderSelect */ "b"], {
     label: "Select your Provider",
     name: "provider",
     customerId: customerId,
@@ -256,47 +263,47 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 32
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Agreement__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Row"], {
-    className: "form-controls",
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Agreement__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 41
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
-    sm: 6,
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
+    className: "form-controls",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 42
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
+    sm: 6,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
     id: "cancel-button",
     onClick: onCancel,
     color: "default",
     block: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 44
     },
     __self: this
-  }, "Cancel")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+  }, "Cancel")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
     sm: 6,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 48
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
     id: "submit-button",
     "aria-describedby": "sso-desc",
     type: "submit",
@@ -304,7 +311,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
     block: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 49
     },
     __self: this
   }, "Submit"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("aside", {
@@ -312,24 +319,24 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
     id: "sso-desc",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 54
     },
     __self: this
   }, "Signing in will redirect you to your payer space in a new tab.")));
 });
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(15)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(22)))
 
 /***/ }),
 
-/***/ 268:
+/***/ 312:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var availity_reactstrap_validation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7);
+/* harmony import */ var availity_reactstrap_validation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
 /* harmony import */ var availity_reactstrap_validation__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(availity_reactstrap_validation__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
+/* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(177);
 var _jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/project/app/templates/sso/components/Agreement.js";
 
 
@@ -375,7 +382,7 @@ var Agreement = function Agreement() {
       lineNumber: 16
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Label"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"], {
     for: "agreement",
     className: "custom-control-label",
     check: true,
@@ -397,76 +404,65 @@ var Agreement = function Agreement() {
 
 /***/ }),
 
-/***/ 269:
+/***/ 313:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(Promise) {/* unused harmony export SpaceContext */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return useSpace; });
-/* harmony import */ var _Users_kgray_Workspaces_availity_availity_workflow_packages_example_react_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
-/* harmony import */ var _Users_kgray_Workspaces_availity_availity_workflow_packages_example_react_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Users_kgray_Workspaces_availity_availity_workflow_packages_example_react_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* WEBPACK VAR INJECTION */(function(Promise, Symbol) {/* harmony import */ var _Users_kgray_Workspaces_availity_availity_workflow_packages_workflow_babel_preset_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(34);
+/* harmony import */ var _Users_kgray_Workspaces_availity_availity_workflow_packages_workflow_babel_preset_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Users_kgray_Workspaces_availity_availity_workflow_packages_workflow_babel_preset_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var mobx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(18);
-/* harmony import */ var _availity_api_axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(29);
-/* harmony import */ var lodash_get__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(65);
-/* harmony import */ var lodash_get__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(lodash_get__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var lodash_get__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(62);
+/* harmony import */ var lodash_get__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_get__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _availity_api_axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(38);
 
-
-var _class, _descriptor, _descriptor2, _temp;
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
-
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
 
-function _applyDecoratedDescriptor(target, property, decorators, descriptor, context) { var desc = {}; Object.keys(descriptor).forEach(function (key) { desc[key] = descriptor[key]; }); desc.enumerable = !!desc.enumerable; desc.configurable = !!desc.configurable; if ('value' in desc || desc.initializer) { desc.writable = true; } desc = decorators.slice().reverse().reduce(function (desc, decorator) { return decorator(target, property, desc) || desc; }, desc); if (context && desc.initializer !== void 0) { desc.value = desc.initializer ? desc.initializer.call(context) : void 0; desc.initializer = undefined; } if (desc.initializer === void 0) { Object.defineProperty(target, property, desc); desc = null; } return desc; }
+function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
-function _initializerWarningHelper(descriptor, context) { throw new Error('Decorating class property failed. Please ensure that ' + 'proposal-class-properties is enabled and set to use loose mode. ' + 'To use proposal-class-properties in spec mode with decorators, wait for ' + 'the next major version of decorators in stage 2.'); }
-
-
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-var SpaceStore = (_class = (_temp = function SpaceStore() {
-  var _this = this;
 
-  _classCallCheck(this, SpaceStore);
+/* harmony default export */ __webpack_exports__["a"] = (function (spaceId) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(true),
+      _useState2 = _slicedToArray(_useState, 2),
+      loading = _useState2[0],
+      setLoading = _useState2[1];
 
-  _initializerDefineProperty(this, "space", _descriptor, this);
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(null),
+      _useState4 = _slicedToArray(_useState3, 2),
+      space = _useState4[0],
+      setSpace = _useState4[1];
 
-  _initializerDefineProperty(this, "error", _descriptor2, this);
-
-  this.fetchSpace =
+  var fetchSpace =
   /*#__PURE__*/
   function () {
     var _ref = _asyncToGenerator(
     /*#__PURE__*/
-    _Users_kgray_Workspaces_availity_availity_workflow_packages_example_react_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(spaceId) {
+    _Users_kgray_Workspaces_availity_availity_workflow_packages_workflow_babel_preset_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
       var response;
-      return _Users_kgray_Workspaces_availity_availity_workflow_packages_example_react_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+      return _Users_kgray_Workspaces_availity_availity_workflow_packages_workflow_babel_preset_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return _availity_api_axios__WEBPACK_IMPORTED_MODULE_3__["avSlotmachineApi"].query(spaceQuery(spaceId));
+              return _availity_api_axios__WEBPACK_IMPORTED_MODULE_3__[/* avSpacesApi */ "g"].get(spaceId);
 
             case 2:
               response = _context.sent;
-              _this.space = lodash_get__WEBPACK_IMPORTED_MODULE_4___default()(response, 'data.space.space');
+              setSpace(lodash_get__WEBPACK_IMPORTED_MODULE_2___default()(response, 'data'));
+              setLoading(false);
 
-            case 4:
+            case 5:
             case "end":
               return _context.stop();
           }
@@ -474,60 +470,36 @@ var SpaceStore = (_class = (_temp = function SpaceStore() {
       }, _callee);
     }));
 
-    return function (_x) {
+    return function fetchSpace() {
       return _ref.apply(this, arguments);
     };
   }();
-}, _temp), (_descriptor = _applyDecoratedDescriptor(_class.prototype, "space", [mobx__WEBPACK_IMPORTED_MODULE_2__[/* observable */ "g"]], {
-  configurable: true,
-  enumerable: true,
-  writable: true,
-  initializer: function initializer() {
-    return null;
-  }
-}), _descriptor2 = _applyDecoratedDescriptor(_class.prototype, "error", [mobx__WEBPACK_IMPORTED_MODULE_2__[/* observable */ "g"]], {
-  configurable: true,
-  enumerable: true,
-  writable: true,
-  initializer: function initializer() {
-    return null;
-  }
-})), _class);
-var SpaceContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["createContext"])(new SpaceStore());
-var useSpace = function useSpace(spaceId) {
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(SpaceContext),
-      space = _useContext.space,
-      fetchSpace = _useContext.fetchSpace,
-      rest = _objectWithoutProperties(_useContext, ["space", "fetchSpace"]);
 
-  if (!space) {
-    fetchSpace(spaceId);
-  }
-
-  return _objectSpread({
-    space: space
-  }, rest);
-};
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(6)))
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    fetchSpace();
+  }, []);
+  return [space, loading];
+});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(9), __webpack_require__(22)))
 
 /***/ }),
 
-/***/ 275:
+/***/ 320:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(537);
+module.exports = __webpack_require__(580);
 
 
 /***/ }),
 
-/***/ 301:
+/***/ 346:
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
 
-/***/ 537:
+/***/ 580:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -538,45 +510,58 @@ var react = __webpack_require__(1);
 var react_default = /*#__PURE__*/__webpack_require__.n(react);
 
 // EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/react-dom/index.js
-var react_dom = __webpack_require__(19);
+var react_dom = __webpack_require__(28);
 
 // EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/@reach/router/es/index.js
-var es = __webpack_require__(41);
+var es = __webpack_require__(45);
 
 // EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/availity-uikit/scss/_bootstrap.scss
-var _bootstrap = __webpack_require__(309);
+var _bootstrap = __webpack_require__(352);
 
 // EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/react-block-ui/style.css
-var style = __webpack_require__(310);
+var style = __webpack_require__(353);
 
 // EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/hash-source/src/dist/createHashSource.js
-var createHashSource = __webpack_require__(252);
+var createHashSource = __webpack_require__(294);
 var createHashSource_default = /*#__PURE__*/__webpack_require__.n(createHashSource);
 
 // CONCATENATED MODULE: ./hashHistory.js
 
 
 var source = createHashSource_default()();
-var hashHistory = Object(es["c" /* createHistory */])(source);
+var hashHistory = Object(es["d" /* createHistory */])(source);
 /* harmony default export */ var hashHistory_0 = (hashHistory);
 // EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/mobx/lib/mobx.module.js
-var mobx_module = __webpack_require__(18);
+var mobx_module = __webpack_require__(27);
+
+// EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/prop-types/index.js
+var prop_types = __webpack_require__(0);
+var prop_types_default = /*#__PURE__*/__webpack_require__.n(prop_types);
 
 // EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/availity-reactstrap-validation/lib/index.js
-var lib = __webpack_require__(7);
+var lib = __webpack_require__(12);
 
-// EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/reactstrap/dist/reactstrap.es.js
-var reactstrap_es = __webpack_require__(3);
+// EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/reactstrap/es/Card.js
+var Card = __webpack_require__(207);
+
+// EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/reactstrap/es/CardBody.js
+var CardBody = __webpack_require__(208);
+
+// EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/reactstrap/es/Button.js
+var Button = __webpack_require__(64);
 
 // EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/mobx-react-lite/dist/index.module.js
-var index_module = __webpack_require__(50);
+var index_module = __webpack_require__(61);
+
+// EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/reactstrap/es/Label.js
+var Label = __webpack_require__(177);
 
 // EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/lodash.set/index.js
-var lodash_set = __webpack_require__(115);
+var lodash_set = __webpack_require__(135);
 var lodash_set_default = /*#__PURE__*/__webpack_require__.n(lodash_set);
 
 // EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/lodash.get/index.js
-var lodash_get = __webpack_require__(65);
+var lodash_get = __webpack_require__(62);
 var lodash_get_default = /*#__PURE__*/__webpack_require__.n(lodash_get);
 
 // CONCATENATED MODULE: ./templates/authorizations/stores/appStore.js
@@ -592,7 +577,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 function _initializerWarningHelper(descriptor, context) { throw new Error('Decorating class property failed. Please ensure that ' + 'proposal-class-properties is enabled and set to use loose mode. ' + 'To use proposal-class-properties in spec mode with decorators, wait for ' + 'the next major version of decorators in stage 2.'); }
 
-function _applyDecoratedDescriptor(target, property, decorators, descriptor, context) { var desc = {}; Object.keys(descriptor).forEach(function (key) { desc[key] = descriptor[key]; }); desc.enumerable = !!desc.enumerable; desc.configurable = !!desc.configurable; if ('value' in desc || desc.initializer) { desc.writable = true; } desc = decorators.slice().reverse().reduce(function (desc, decorator) { return decorator(target, property, desc) || desc; }, desc); if (context && desc.initializer !== void 0) { desc.value = desc.initializer ? desc.initializer.call(context) : void 0; desc.initializer = undefined; } if (desc.initializer === void 0) { Object.defineProperty(target, property, desc); desc = null; } return desc; }
+function _applyDecoratedDescriptor(target, property, decorators, descriptor, context) { var desc = {}; Object['ke' + 'ys'](descriptor).forEach(function (key) { desc[key] = descriptor[key]; }); desc.enumerable = !!desc.enumerable; desc.configurable = !!desc.configurable; if ('value' in desc || desc.initializer) { desc.writable = true; } desc = decorators.slice().reverse().reduce(function (desc, decorator) { return decorator(target, property, desc) || desc; }, desc); if (context && desc.initializer !== void 0) { desc.value = desc.initializer ? desc.initializer.call(context) : void 0; desc.initializer = undefined; } if (desc.initializer === void 0) { Object['define' + 'Property'](target, property, desc); desc = null; } return desc; }
 
 
 
@@ -684,7 +669,7 @@ function stateStore_defineProperties(target, props) { for (var i = 0; i < props.
 
 function stateStore_createClass(Constructor, protoProps, staticProps) { if (protoProps) stateStore_defineProperties(Constructor.prototype, protoProps); if (staticProps) stateStore_defineProperties(Constructor, staticProps); return Constructor; }
 
-function stateStore_applyDecoratedDescriptor(target, property, decorators, descriptor, context) { var desc = {}; Object.keys(descriptor).forEach(function (key) { desc[key] = descriptor[key]; }); desc.enumerable = !!desc.enumerable; desc.configurable = !!desc.configurable; if ('value' in desc || desc.initializer) { desc.writable = true; } desc = decorators.slice().reverse().reduce(function (desc, decorator) { return decorator(target, property, desc) || desc; }, desc); if (context && desc.initializer !== void 0) { desc.value = desc.initializer ? desc.initializer.call(context) : void 0; desc.initializer = undefined; } if (desc.initializer === void 0) { Object.defineProperty(target, property, desc); desc = null; } return desc; }
+function stateStore_applyDecoratedDescriptor(target, property, decorators, descriptor, context) { var desc = {}; Object['ke' + 'ys'](descriptor).forEach(function (key) { desc[key] = descriptor[key]; }); desc.enumerable = !!desc.enumerable; desc.configurable = !!desc.configurable; if ('value' in desc || desc.initializer) { desc.writable = true; } desc = decorators.slice().reverse().reduce(function (desc, decorator) { return decorator(target, property, desc) || desc; }, desc); if (context && desc.initializer !== void 0) { desc.value = desc.initializer ? desc.initializer.call(context) : void 0; desc.initializer = undefined; } if (desc.initializer === void 0) { Object['define' + 'Property'](target, property, desc); desc = null; } return desc; }
 
 
 var emptyState = {
@@ -790,7 +775,7 @@ var _jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflow/packages/
       lineNumber: 22
     },
     __self: this
-  }), react_default.a.createElement(reactstrap_es["Label"], {
+  }), react_default.a.createElement(Label["a" /* default */], {
     for: "agreement",
     className: "custom-control-label",
     check: true,
@@ -807,8 +792,11 @@ var _jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflow/packages/
     __self: this
   }, "You must agree to terms")));
 }));
+// EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/reactstrap/es/UncontrolledTooltip.js
+var UncontrolledTooltip = __webpack_require__(211);
+
 // EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/@availity/reactstrap-validation-date/index.js + 4 modules
-var reactstrap_validation_date = __webpack_require__(271);
+var reactstrap_validation_date = __webpack_require__(315);
 
 // CONCATENATED MODULE: ./templates/authorizations/Request/components/Patient.js
 var Patient_jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/project/app/templates/authorizations/Request/components/Patient.js";
@@ -837,7 +825,7 @@ var Patient_jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflow/pa
       lineNumber: 16
     },
     __self: this
-  }, "Member"), react_default.a.createElement(reactstrap_es["Label"], {
+  }, "Member"), react_default.a.createElement(Label["a" /* default */], {
     id: "memberid-help",
     for: "memberID",
     __source: {
@@ -852,7 +840,7 @@ var Patient_jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflow/pa
       lineNumber: 20
     },
     __self: this
-  }, "What's this?")), react_default.a.createElement(reactstrap_es["UncontrolledTooltip"], {
+  }, "What's this?")), react_default.a.createElement(UncontrolledTooltip["a" /* default */], {
     target: "memberid-help",
     placement: "top",
     __source: {
@@ -896,7 +884,7 @@ var Patient_jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflow/pa
   }));
 }));
 // EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/@availity/reactstrap-validation-select/resources.js + 3 modules
-var resources = __webpack_require__(76);
+var resources = __webpack_require__(90);
 
 // CONCATENATED MODULE: ./templates/authorizations/Request/components/Provider.js
 var Provider_jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/project/app/templates/authorizations/Request/components/Provider.js";
@@ -992,7 +980,7 @@ var Footer_jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflow/pac
   }, "Availity"), " 2018");
 });
 // EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/@availity/breadcrumbs/index.js + 1 modules
-var breadcrumbs = __webpack_require__(114);
+var breadcrumbs = __webpack_require__(134);
 
 // CONCATENATED MODULE: ./templates/authorizations/components/Header.js
 var Header_jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/project/app/templates/authorizations/components/Header.js";
@@ -1047,6 +1035,7 @@ var Request_jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflow/pa
 
 
 
+
 var Request_AuthorizationsRequest = function AuthorizationsRequest(_ref) {
   var navigate = _ref.navigate;
 
@@ -1058,96 +1047,105 @@ var Request_AuthorizationsRequest = function AuthorizationsRequest(_ref) {
     className: "container-sm",
     __source: {
       fileName: Request_jsxFileName,
-      lineNumber: 15
+      lineNumber: 16
     },
     __self: this
   }, react_default.a.createElement(Header, {
     __source: {
       fileName: Request_jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     },
     __self: this
   }), react_default.a.createElement(lib["AvForm"], {
     onValidSubmit: submit,
     __source: {
       fileName: Request_jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, react_default.a.createElement(reactstrap_es["Card"], {
-    __source: {
-      fileName: Request_jsxFileName,
       lineNumber: 18
     },
     __self: this
-  }, react_default.a.createElement(reactstrap_es["CardBody"], {
+  }, react_default.a.createElement(Card["a" /* default */], {
     __source: {
       fileName: Request_jsxFileName,
       lineNumber: 19
     },
     __self: this
-  }, react_default.a.createElement(Provider, {
+  }, react_default.a.createElement(CardBody["a" /* default */], {
     __source: {
       fileName: Request_jsxFileName,
       lineNumber: 20
     },
     __self: this
-  }), react_default.a.createElement(Patient, {
+  }, react_default.a.createElement(Provider, {
     __source: {
       fileName: Request_jsxFileName,
       lineNumber: 21
     },
     __self: this
-  }), react_default.a.createElement(Agreement, {
+  }), react_default.a.createElement(Patient, {
     __source: {
       fileName: Request_jsxFileName,
       lineNumber: 22
+    },
+    __self: this
+  }), react_default.a.createElement(Agreement, {
+    __source: {
+      fileName: Request_jsxFileName,
+      lineNumber: 23
     },
     __self: this
   }), react_default.a.createElement("hr", {
     className: "divider",
     __source: {
       fileName: Request_jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     },
     __self: this
   }), react_default.a.createElement("div", {
     className: "form-controls form-controls-card",
     __source: {
       fileName: Request_jsxFileName,
-      lineNumber: 24
+      lineNumber: 25
     },
     __self: this
-  }, react_default.a.createElement(reactstrap_es["Button"], {
+  }, react_default.a.createElement(Button["a" /* default */], {
     type: "submit",
     className: "btn btn-default",
     __source: {
       fileName: Request_jsxFileName,
-      lineNumber: 25
+      lineNumber: 26
     },
     __self: this
   }, "Authorize"))))), react_default.a.createElement(Footer, {
     __source: {
       fileName: Request_jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     },
     __self: this
   }));
 };
 
+Request_AuthorizationsRequest.propTypes = {
+  navigate: prop_types_default.a.func
+};
 /* harmony default export */ var Request = (Request_AuthorizationsRequest);
+// EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/reactstrap/es/Row.js
+var Row = __webpack_require__(170);
+
+// EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/reactstrap/es/Col.js
+var Col = __webpack_require__(125);
+
 // CONCATENATED MODULE: ./templates/authorizations/Response/components/Status.js
 var Status_jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/project/app/templates/authorizations/Response/components/Status.js";
 
 
 /* harmony default export */ var Status = (function () {
-  return react_default.a.createElement(reactstrap_es["Row"], {
+  return react_default.a.createElement(Row["a" /* default */], {
     __source: {
       fileName: Status_jsxFileName,
       lineNumber: 5
     },
     __self: this
-  }, react_default.a.createElement(reactstrap_es["Col"], {
+  }, react_default.a.createElement(Col["a" /* default */], {
     sm: "3",
     __source: {
       fileName: Status_jsxFileName,
@@ -1167,7 +1165,7 @@ var Status_jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflow/pac
       lineNumber: 8
     },
     __self: this
-  }, "good")), react_default.a.createElement(reactstrap_es["Col"], {
+  }, "good")), react_default.a.createElement(Col["a" /* default */], {
     sm: "3",
     __source: {
       fileName: Status_jsxFileName,
@@ -1187,7 +1185,7 @@ var Status_jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflow/pac
       lineNumber: 12
     },
     __self: this
-  }, "28347")), react_default.a.createElement(reactstrap_es["Col"], {
+  }, "28347")), react_default.a.createElement(Col["a" /* default */], {
     sm: "3",
     __source: {
       fileName: Status_jsxFileName,
@@ -1207,7 +1205,7 @@ var Status_jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflow/pac
       lineNumber: 16
     },
     __self: this
-  }, "boom")), react_default.a.createElement(reactstrap_es["Col"], {
+  }, "boom")), react_default.a.createElement(Col["a" /* default */], {
     sm: "3",
     __source: {
       fileName: Status_jsxFileName,
@@ -1234,13 +1232,13 @@ var components_Patient_jsxFileName = "/Users/kgray/Workspaces/availity/availity-
 
 
 /* harmony default export */ var components_Patient = (function () {
-  return react_default.a.createElement(reactstrap_es["Row"], {
+  return react_default.a.createElement(Row["a" /* default */], {
     __source: {
       fileName: components_Patient_jsxFileName,
       lineNumber: 5
     },
     __self: this
-  }, react_default.a.createElement(reactstrap_es["Col"], {
+  }, react_default.a.createElement(Col["a" /* default */], {
     sm: "3",
     __source: {
       fileName: components_Patient_jsxFileName,
@@ -1260,7 +1258,7 @@ var components_Patient_jsxFileName = "/Users/kgray/Workspaces/availity/availity-
       lineNumber: 8
     },
     __self: this
-  }, "383837")), react_default.a.createElement(reactstrap_es["Col"], {
+  }, "383837")), react_default.a.createElement(Col["a" /* default */], {
     sm: "3",
     __source: {
       fileName: components_Patient_jsxFileName,
@@ -1280,7 +1278,7 @@ var components_Patient_jsxFileName = "/Users/kgray/Workspaces/availity/availity-
       lineNumber: 12
     },
     __self: this
-  }, "Jane Smith")), react_default.a.createElement(reactstrap_es["Col"], {
+  }, "Jane Smith")), react_default.a.createElement(Col["a" /* default */], {
     sm: "3",
     __source: {
       fileName: components_Patient_jsxFileName,
@@ -1300,7 +1298,7 @@ var components_Patient_jsxFileName = "/Users/kgray/Workspaces/availity/availity-
       lineNumber: 16
     },
     __self: this
-  }, "10/10/2011")), react_default.a.createElement(reactstrap_es["Col"], {
+  }, "10/10/2011")), react_default.a.createElement(Col["a" /* default */], {
     sm: "3",
     __source: {
       fileName: components_Patient_jsxFileName,
@@ -1322,6 +1320,9 @@ var components_Patient_jsxFileName = "/Users/kgray/Workspaces/availity/availity-
     __self: this
   }, "1234343")));
 });
+// EXTERNAL MODULE: /Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/node_modules/reactstrap/es/Badge.js
+var Badge = __webpack_require__(206);
+
 // CONCATENATED MODULE: ./templates/authorizations/Response/components/Transaction.js
 var Transaction_jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/project/app/templates/authorizations/Response/components/Transaction.js";
 
@@ -1332,7 +1333,7 @@ var Transaction_jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflo
   var _useStateStore = stores_useStateStore(),
       customerId = _useStateStore.request.organization.customerId;
 
-  return react_default.a.createElement(reactstrap_es["CardBody"], {
+  return react_default.a.createElement(CardBody["a" /* default */], {
     __source: {
       fileName: Transaction_jsxFileName,
       lineNumber: 10
@@ -1352,7 +1353,7 @@ var Transaction_jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflo
       lineNumber: 12
     },
     __self: this
-  }, "Transaction ID"), react_default.a.createElement(reactstrap_es["Badge"], {
+  }, "Transaction ID"), react_default.a.createElement(Badge["a" /* default */], {
     color: "info",
     __source: {
       fileName: Transaction_jsxFileName,
@@ -1366,7 +1367,7 @@ var Transaction_jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflo
       lineNumber: 14
     },
     __self: this
-  }, "Customer ID"), react_default.a.createElement(reactstrap_es["Badge"], {
+  }, "Customer ID"), react_default.a.createElement(Badge["a" /* default */], {
     color: "info",
     __source: {
       fileName: Transaction_jsxFileName,
@@ -1406,13 +1407,13 @@ var Response_jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflow/p
       lineNumber: 9
     },
     __self: this
-  }), react_default.a.createElement(reactstrap_es["Card"], {
+  }), react_default.a.createElement(Card["a" /* default */], {
     __source: {
       fileName: Response_jsxFileName,
       lineNumber: 10
     },
     __self: this
-  }, react_default.a.createElement(reactstrap_es["CardBody"], {
+  }, react_default.a.createElement(CardBody["a" /* default */], {
     __source: {
       fileName: Response_jsxFileName,
       lineNumber: 11
@@ -1450,7 +1451,7 @@ Object(mobx_module["d" /* configure */])({
 });
 
 var App_App = function App() {
-  return react_default.a.createElement(es["b" /* Router */], {
+  return react_default.a.createElement(es["c" /* Router */], {
     style: {
       height: '100%'
     },
@@ -1480,7 +1481,7 @@ var App_App = function App() {
 
 /* harmony default export */ var authorizations_App = (App_App);
 // EXTERNAL MODULE: ./templates/sso/areas/SsoForm.js
-var SsoForm = __webpack_require__(261);
+var SsoForm = __webpack_require__(305);
 
 // CONCATENATED MODULE: ./templates/sso/App.js
 var sso_App_jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflow/packages/example-react/project/app/templates/sso/App.js";
@@ -1488,7 +1489,7 @@ var sso_App_jsxFileName = "/Users/kgray/Workspaces/availity/availity-workflow/pa
 
 
 /* harmony default export */ var sso_App = (function () {
-  return react_default.a.createElement(es["b" /* Router */], {
+  return react_default.a.createElement(es["c" /* Router */], {
     __source: {
       fileName: sso_App_jsxFileName,
       lineNumber: 6
@@ -1509,19 +1510,38 @@ var App_jsxFileName_0 = "/Users/kgray/Workspaces/availity/availity-workflow/pack
 
 
 
-/* harmony default export */ var App_0 = (function () {
-  return react_default.a.createElement(es["b" /* Router */], {
+
+var App_RedirectRoute = function RedirectRoute() {
+  return react_default.a.createElement(es["b" /* Redirect */], {
+    to: "/authorizations",
+    noThrow: true,
     __source: {
       fileName: App_jsxFileName_0,
-      lineNumber: 7
+      lineNumber: 6
     },
     __self: this
-  }, react_default.a.createElement(Request, {
-    exact: true,
+  });
+};
+
+/* harmony default export */ var App_0 = (function () {
+  return react_default.a.createElement(es["c" /* Router */], {
+    __source: {
+      fileName: App_jsxFileName_0,
+      lineNumber: 9
+    },
+    __self: this
+  }, react_default.a.createElement(App_RedirectRoute, {
+    path: "/",
+    __source: {
+      fileName: App_jsxFileName_0,
+      lineNumber: 10
+    },
+    __self: this
+  }), react_default.a.createElement(Request, {
     path: "/authorizations",
     __source: {
       fileName: App_jsxFileName_0,
-      lineNumber: 8
+      lineNumber: 11
     },
     __self: this
   }), react_default.a.createElement(Response, {
@@ -1529,14 +1549,14 @@ var App_jsxFileName_0 = "/Users/kgray/Workspaces/availity/availity-workflow/pack
     path: "/authorizations/response",
     __source: {
       fileName: App_jsxFileName_0,
-      lineNumber: 9
+      lineNumber: 12
     },
     __self: this
   }), react_default.a.createElement(sso_App, {
     path: "/sso",
     __source: {
       fileName: App_jsxFileName_0,
-      lineNumber: 10
+      lineNumber: 13
     },
     __self: this
   }));
@@ -1563,7 +1583,7 @@ Object(react_dom["render"])(react_default.a.createElement(es["a" /* LocationProv
     lineNumber: 11
   },
   __self: undefined
-})), document.getElementById('root'));
+})), document.querySelector('#root'));
 
 /***/ })
 

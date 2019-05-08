@@ -1,4 +1,4 @@
-/*! v5.3.0 - 2019-05-08T20:26:17.193Z */
+/*! v5.3.0 - 2019-05-08T22:14:52.416Z */
 @charset "UTF-8";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -1358,9 +1358,6 @@ pre {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
   .form-control::-webkit-input-placeholder {
-    color: #6c757d;
-    opacity: 1; }
-  .form-control::-moz-placeholder {
     color: #6c757d;
     opacity: 1; }
   .form-control:-ms-input-placeholder {
@@ -3446,11 +3443,9 @@ input[type="button"].btn-block {
 @media (min-width: 576px) {
   .card-columns {
     -webkit-column-count: 3;
-       -moz-column-count: 3;
             column-count: 3;
     grid-column-gap: 1.25rem;
     -webkit-column-gap: 1.25rem;
-       -moz-column-gap: 1.25rem;
             column-gap: 1.25rem;
     orphans: 1;
     widows: 1; }
@@ -10184,4 +10179,4 @@ a.stepwizard-step:not(.disabled),
   max-width: inherit; }
 
 
-/*# sourceMappingURL=vendor-66298535739022c56cd0.css.map*/
+/*# sourceMappingURL=vendor-b5012b2cef28f2def0ff.css.map*/
